@@ -149,18 +149,24 @@ const weatherDisplay = async (data, el) => {
 
     let rn = document.createElement("p");
     rn.setAttribute("class", "card-title");
-    rn.textContent = data.description;
+    rn.textContent ="Description:"+" "+ data.description;
 
     let main = document.createElement("p");
     main.setAttribute("class", "card-title");
-    main.textContent = data.description;
+    main.textContent ="Main:"+" "+ data.main;
 
    
     let btn = document.createElement("button");
-    btn.className = 'close'
-    btn.setAttribute("data-dismiss", "modal");
-    // btn.setAttribute("href", "window.location.reload()");
-    btn.innerText = "Close";
+    // btn.className = 'close'
+    // btn.setAttribute("data-dismiss", "modal");
+  
+    btn.innerText = "X";
+    btn.addEventListener("click",function(){
+
+      // btn.setAttribute("id", "modal");
+      document.location.reload(true)
+
+    })
 
 
     // card.append(cardBody);

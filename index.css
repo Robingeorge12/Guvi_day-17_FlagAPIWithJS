@@ -43,14 +43,16 @@
   }
 
 .model{
-  border: 1px solid blue;
+  /* border: 1px solid blue; */
   /* background-color: #0a0505; */
   /* display: flex; */
-  /* position: fixed;
+  position: fixed;
      top:50%;
      left: 50%;
      transform: translate(-50%,-50%);
-     z-index: 1000; */
+     z-index: 1000;
+     background-color: #0a050593 !important;
+     width: 90% !important;
  /* width:200px;
 height: 300px;  */
 /* border: 1px solid blue; */
@@ -62,8 +64,11 @@ height: 300px;  */
   /* border: 12px solid blue */
 }
 
-@media screen and (max-width:768px){
+/* #modal{
+  display: true;
+} */
+/* @media screen and (max-width:768px){
 
-  
 
-}
+
+} */
